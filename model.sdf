@@ -1,26 +1,20 @@
 <?xml version="1.0"?>
 <sdf version="1.5">
-  <model name="pipe">
+  <model name="underwater_pipe">
     <static>true</static>
     <link name="link">
-      <collision name="pipe">
-      <pose>0 0 0 0 0 0</pose>
+      <collision name="underwater_pipe_collision">
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://undersea_pipe/meshes/pipe.dae</uri>
-            <scale>1.0 1.0 1.0</scale>
-          </mesh>
+          <mesh><uri>model://underwater_pipe/meshes/underwater_pipe.stl</uri></mesh>
         </geometry>
       </collision>
 
-      <visual name="pipe">
-        <cast_shadows>true</cast_shadows>
+      <visual name="underwater_pipe_visual">
+        <cast_shadows>false</cast_shadows>
         <pose>0 0 0 0 0 0</pose>
         <geometry>
-          <mesh>
-            <uri>model://undersea_pipe/meshes/pipe.dae</uri>
-            <scale>1.0 1.0 1.0</scale>
-          </mesh>
+          <mesh><uri>model://underwater_pipe/meshes/underwater_pipe.dae</uri></mesh>
         </geometry>
       </visual>
     </link>
